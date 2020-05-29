@@ -1,0 +1,11 @@
+---
+kind: pipeline
+type: docker
+name: build and publish
+
+steps:
+    - name: build
+      image: maven:3-openjdk-8
+      user: root
+      commands:
+          - ./script.sh
