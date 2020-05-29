@@ -9,3 +9,6 @@ steps:
       user: root
       commands:
           - ./script.sh
+      environment:
+          MVN_SETTINGS:
+              from_secret: mvn_settings
